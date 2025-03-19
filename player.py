@@ -10,6 +10,10 @@ from constants import (
 from shot import Shot
 
 
+pygame.mixer.init()
+shot_sound = pygame.mixer.Sound("./laser-shot.mp3")
+
+
 class Player(CircleShape):
     def __init__(self, x, y):
         super().__init__(x, y, PLAYER_RADIUS)
@@ -57,3 +61,4 @@ class Player(CircleShape):
         shot = Shot(self.position.x, self.position.y)
         shot.velocity = pygame.Vector2(0, 1).rotate(self.rotation) * PLAYER_SHOOT_SPEED
         self.shoot_cooldown = PLAYER_SHOOT_COOLDOWN
+        pygame.mixer.Sound.play(shot_sound)
