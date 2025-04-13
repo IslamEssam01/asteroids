@@ -1,5 +1,7 @@
 # Asteroids Game
 
+https://github.com/user-attachments/assets/70e164f8-bda7-49c2-bd79-4b7a0360aad6
+
 A classic arcade-style Asteroids game implemented in Python using Pygame. This project was developed as part of the [Boot.dev](https://boot.dev) Backend Development Course.
 
 ## Description
